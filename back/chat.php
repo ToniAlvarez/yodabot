@@ -8,7 +8,7 @@ session_start();
 $data = json_decode(file_get_contents('php://input'));
 
 //Si contiene "force" devolver películas
-if (stripos($data->message, "force") !== false) {
+if (str_contains($data->message, "force") !== false) {
 
     $films = GraphQL::getFilms();
 
