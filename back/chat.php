@@ -14,7 +14,7 @@ if (str_contains($data->message, "force") !== false) {
 
     shuffle($films);
 
-    echo "Here is a list of git push heroku masterStar Wars movies:";
+    echo "Here is a list of Star Wars movies:";
     echo "<ul>";
     foreach ($films as $film)
         echo "<li>" . $film . "</li>";
