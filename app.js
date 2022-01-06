@@ -25,7 +25,7 @@ new Vue({
             this.chat.push(message);
             sessionStorage.setItem('yodachat', JSON.stringify(this.chat));
 
-            axios.post('../back/chat.php', {
+            axios.post('back/chat.php', {
                 message: this.message
             }).then(response => {
                 let message = {value: response.data, reply: true};
